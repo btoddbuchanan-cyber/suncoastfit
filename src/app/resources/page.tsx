@@ -26,7 +26,7 @@ const resources = [
     description:
       "Strength Training Starter Kit for 50+ now available! A step-by-step program designed for adults over 50 who want to build strength safely and confidently at home. More guides coming soon.",
     href: "/resources/guides",
-    image: "/images/services/walker-to-runner.png",
+    image: "/images/guides/strength-training-starter-kit.jpg",
     cta: "View Guides",
   },
 ];

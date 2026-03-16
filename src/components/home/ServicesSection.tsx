@@ -38,7 +38,7 @@ const services = [
     description:
       "A step-by-step strength training program designed for adults over 50 who want to build strength safely and confidently at home.",
     href: "/resources/guides",
-    image: "/images/services/personal-training.png",
+    image: "/images/guides/strength-training-starter-kit.jpg",
     accent: "var(--color-primary)",
     bgTint: "var(--color-primary-lighter)",
   },
