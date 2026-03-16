@@ -11,7 +11,7 @@ const services = [
     description:
       "Low-impact workouts you can do at home. Standing routines, dumbbell sessions, stretching, and more — all designed for adults 50+.",
     href: "/videos",
-    image: "/images/services/pilates-plus.png",
+    image: "/images/services/youtube-hero.jpg",
     accent: "var(--color-primary)",
     bgTint: "var(--color-primary-lighter)",
   },
@@ -32,6 +32,7 @@ const services = [
     image: "/images/guides/strength-training-starter-kit.jpg",
     accent: "var(--color-primary)",
     bgTint: "var(--color-primary-lighter)",
+    contain: true,
   },
   {
     title: "Walker to Runner",
@@ -88,12 +89,15 @@ export function ServicesSection() {
                 className="group block h-full bg-white rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-sm)] border border-[var(--color-border-light)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Service image */}
-                <div className="relative aspect-[16/10] overflow-hidden">
+                <div
+                  className="relative aspect-[16/10] overflow-hidden"
+                  style={service.contain ? { backgroundColor: "var(--color-primary-lighter)" } : undefined}
+                >
                   <Image
                     src={service.image}
                     alt={service.title}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`${service.contain ? "object-contain p-2" : "object-cover"} group-hover:scale-105 transition-transform duration-500`}
                     sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 25vw"
                   />
                 </div>

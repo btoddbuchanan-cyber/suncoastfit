@@ -99,12 +99,12 @@ export default function GuidesPage() {
                 >
                   <div className="grid md:grid-cols-2">
                     {/* Product Image */}
-                    <div className="relative aspect-square md:aspect-auto overflow-hidden">
+                    <div className="relative aspect-square md:aspect-auto overflow-hidden" style={{ backgroundColor: "var(--color-primary-lighter)" }}>
                       <Image
                         src="/images/guides/strength-training-starter-kit.jpg"
                         alt={guide.title}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
                     </div>
