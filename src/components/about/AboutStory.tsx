@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { AnimatedSection } from "@/components/AnimatedSection";
 
 export function AboutStory() {
@@ -33,6 +34,39 @@ export function AboutStory() {
               Leaning on my expertise as an occupational therapist, I love working with clients
               of all ages and levels of fitness, helping them thrive in their lives.
             </p>
+          </div>
+        </AnimatedSection>
+
+        {/* Photo gallery */}
+        <AnimatedSection delay={0.05}>
+          <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="relative aspect-square rounded-[var(--radius-lg)] overflow-hidden">
+              <Image
+                src="/images/about/sandra-paddleboard.jpg"
+                alt="Sandra paddleboarding on the Sunshine Coast"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+            </div>
+            <div className="relative aspect-square rounded-[var(--radius-lg)] overflow-hidden">
+              <Image
+                src="/images/about/suncoastfit-group.jpg"
+                alt="Suncoastfit group fitness session"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+            </div>
+            <div className="relative aspect-square rounded-[var(--radius-lg)] overflow-hidden col-span-2 md:col-span-1">
+              <Image
+                src="/images/about/gallery-1.jpg"
+                alt="Sandra outdoors on the Sunshine Coast"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
           </div>
         </AnimatedSection>
 
@@ -89,6 +123,15 @@ export function AboutStory() {
                 It was a high-five moment. We continued to build on this, entering 5K, 10K,
                 and half marathon events together.
               </p>
+            </div>
+            <div className="mt-8 relative aspect-[16/9] max-w-lg rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-lg)]">
+              <Image
+                src="/images/about/sandra-todd.jpg"
+                alt="Sandra and Todd Buchanan"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 90vw, 50vw"
+              />
             </div>
           </div>
         </AnimatedSection>

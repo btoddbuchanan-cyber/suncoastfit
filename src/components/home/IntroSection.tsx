@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { AnimatedSection, AnimatedHeading } from "@/components/AnimatedSection";
 
 export function IntroSection() {
@@ -13,19 +14,21 @@ export function IntroSection() {
           {/* Left — decorative element */}
           <AnimatedSection className="lg:col-span-2 relative">
             <div className="relative aspect-square max-w-sm mx-auto">
-              {/* Organic shape background */}
-              <div className="absolute inset-0 bg-[var(--color-primary-lighter)] rounded-[40%_60%_70%_30%/40%_50%_60%_50%]" />
-              <div className="absolute inset-4 bg-[var(--color-bg-primary)] rounded-[60%_40%_30%_70%/50%_60%_40%_50%] flex items-center justify-center">
-                <div className="text-center p-8">
-                  <p className="text-6xl text-[var(--color-primary)]" style={{ fontFamily: "var(--font-dm-serif)" }}>20+</p>
-                  <p className="text-sm font-semibold text-[var(--color-text-muted)] mt-2 tracking-wide uppercase" style={{ fontFamily: "var(--font-nunito)" }}>
-                    Years in Health<br />& Rehabilitation
-                  </p>
-                </div>
+              <div className="absolute inset-0 bg-[var(--color-primary-lighter)] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] overflow-hidden">
+                <Image
+                  src="/images/about/sandra-portrait.jpg"
+                  alt="Sandra Buchanan by the water on the Sunshine Coast"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 80vw, 30vw"
+                />
               </div>
               {/* Small floating accent */}
-              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-[var(--color-accent)]/10 rounded-full flex items-center justify-center">
-                <span className="text-xl text-[var(--color-accent)]" style={{ fontFamily: "var(--font-dm-serif)" }}>ACE</span>
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-white shadow-[var(--shadow-md)] rounded-full flex items-center justify-center border border-[var(--color-border-light)]">
+                <div className="text-center">
+                  <p className="text-lg font-bold text-[var(--color-primary)]" style={{ fontFamily: "var(--font-dm-serif)" }}>20+</p>
+                  <p className="text-[9px] font-semibold text-[var(--color-text-muted)] uppercase leading-tight" style={{ fontFamily: "var(--font-nunito)" }}>Years</p>
+                </div>
               </div>
             </div>
           </AnimatedSection>

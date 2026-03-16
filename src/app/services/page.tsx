@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection, AnimatedHeading } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
@@ -24,6 +25,8 @@ const services = [
     price: "$96 for 8-week session",
     href: "/services/pilates",
     accent: "var(--color-primary)",
+    image: "/images/services/pilates-plus.png",
+    imageAlt: "Pilates Plus mat class",
   },
   {
     title: "Personal Training",
@@ -39,6 +42,8 @@ const services = [
     price: "Contact for rates",
     href: "/services/personal-training",
     accent: "var(--color-accent)",
+    image: "/images/services/personal-training.png",
+    imageAlt: "Personal training session",
   },
   {
     title: "Walker to Runner",
@@ -54,6 +59,8 @@ const services = [
     price: "Contact for upcoming clinics",
     href: "/services/walker-to-runner",
     accent: "var(--color-primary-dark)",
+    image: "/images/services/walker-to-runner.png",
+    imageAlt: "Walker to Runner program participants",
   },
 ];
 
@@ -127,19 +134,14 @@ export default function ServicesPage() {
 
                 {/* Visual */}
                 <div className={`relative ${i % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="aspect-[4/3] rounded-[var(--radius-xl)] overflow-hidden" style={{ backgroundColor: `color-mix(in srgb, ${service.accent} 8%, var(--color-bg-primary))` }}>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-center">
-                        <div className="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-4" style={{ backgroundColor: `color-mix(in srgb, ${service.accent} 15%, transparent)` }}>
-                          <span className="text-4xl" style={{ fontFamily: "var(--font-dm-serif)", color: service.accent }}>
-                            {i === 0 ? "P" : i === 1 ? "PT" : "W2R"}
-                          </span>
-                        </div>
-                        <p className="text-lg font-semibold" style={{ color: service.accent, fontFamily: "var(--font-dm-serif)" }}>
-                          {service.title}
-                        </p>
-                      </div>
-                    </div>
+                  <div className="relative aspect-[4/3] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-lg)]">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 90vw, 45vw"
+                    />
                   </div>
                 </div>
               </div>

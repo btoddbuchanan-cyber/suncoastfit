@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 
 export function AboutHero() {
@@ -18,23 +19,23 @@ export function AboutHero() {
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="relative order-2 lg:order-1"
           >
-            <div className="relative aspect-[3/4] max-w-md mx-auto rounded-[var(--radius-xl)] overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/30 to-[var(--color-accent)]/10" />
-              <div className="absolute inset-0 flex items-end justify-center pb-8">
-                <div className="text-center">
-                  <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[var(--color-primary)]/10 flex items-center justify-center">
-                    <svg viewBox="0 0 80 80" className="w-20 h-20" fill="none" aria-hidden="true">
-                      <circle cx="40" cy="25" r="12" stroke="var(--color-primary)" strokeWidth="2" />
-                      <path d="M20 72 C20 52, 28 42, 40 42 C52 42, 60 52, 60 72" stroke="var(--color-primary)" strokeWidth="2" />
-                    </svg>
-                  </div>
-                  <p className="text-sm font-semibold text-[var(--color-primary-dark)]" style={{ fontFamily: "var(--font-nunito)" }}>
-                    Sandra Buchanan
-                  </p>
-                  <p className="text-xs text-[var(--color-text-muted)]" style={{ fontFamily: "var(--font-nunito)" }}>
-                    Sunshine Coast, BC
-                  </p>
-                </div>
+            <div className="relative aspect-[3/4] max-w-md mx-auto rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)]">
+              <Image
+                src="/images/about/sandra-portrait.jpg"
+                alt="Sandra Buchanan — Personal Trainer on the Sunshine Coast, BC"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 1024px) 90vw, 40vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+              <div className="absolute bottom-6 left-0 right-0 text-center">
+                <p className="text-sm font-semibold text-white drop-shadow-md" style={{ fontFamily: "var(--font-nunito)" }}>
+                  Sandra Buchanan
+                </p>
+                <p className="text-xs text-white/80 drop-shadow-md" style={{ fontFamily: "var(--font-nunito)" }}>
+                  Sunshine Coast, BC
+                </p>
               </div>
             </div>
 

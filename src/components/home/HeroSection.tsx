@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "motion/react";
 import { Button } from "@/components/Button";
 
@@ -96,36 +97,16 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="relative hidden lg:block"
           >
-            <div className="relative aspect-[4/5] rounded-[var(--radius-xl)] overflow-hidden">
-              {/* Placeholder — coastal imagery composition */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-primary)]/20 via-[var(--color-primary-lighter)] to-[var(--color-accent)]/10 rounded-[var(--radius-xl)]" />
-              <div className="absolute inset-4 rounded-[var(--radius-lg)] border-2 border-[var(--color-primary)]/10" />
-
-              {/* Decorative elements representing movement/wellness */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center space-y-6">
-                  <svg viewBox="0 0 120 120" className="w-32 h-32 mx-auto" fill="none" aria-hidden="true">
-                    {/* Sun rays */}
-                    <circle cx="60" cy="60" r="20" stroke="var(--color-accent)" strokeWidth="2" opacity="0.6" />
-                    <circle cx="60" cy="60" r="35" stroke="var(--color-primary)" strokeWidth="1" opacity="0.3" />
-                    <circle cx="60" cy="60" r="50" stroke="var(--color-primary-light)" strokeWidth="0.5" opacity="0.2" />
-                    {/* Running shoe silhouette */}
-                    <path
-                      d="M35 65 C35 58, 42 50, 55 50 C60 50, 66 53, 70 56 L80 59 C83 59.5, 86 62, 86 64 L86 66 C86 69, 83 72, 80 72 L40 72 C37 72, 35 69, 35 66Z"
-                      fill="var(--color-primary-dark)"
-                      opacity="0.8"
-                    />
-                  </svg>
-                  <div>
-                    <p className="text-3xl text-[var(--color-primary-dark)]" style={{ fontFamily: "var(--font-dm-serif)" }}>
-                      Move with Joy
-                    </p>
-                    <p className="text-sm text-[var(--color-text-muted)] mt-2" style={{ fontFamily: "var(--font-nunito)" }}>
-                      Training designed for your life
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <div className="relative aspect-[4/5] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)]">
+              <Image
+                src="/images/hero/hero-home.jpg"
+                alt="Sandra Buchanan stretching outdoors on the Sunshine Coast"
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
 
             {/* Floating accent card */}

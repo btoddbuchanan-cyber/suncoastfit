@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { AnimatedSection, AnimatedHeading } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 import { TestimonialCard } from "@/components/TestimonialCard";
@@ -23,20 +24,16 @@ export default function BookPage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Book Visual */}
             <AnimatedSection>
-              <div className="relative max-w-xs mx-auto">
-                <div className="aspect-[3/4] bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] rounded-[var(--radius-lg)] shadow-[var(--shadow-xl)] p-8 flex flex-col justify-between">
-                  <p className="text-sm font-bold tracking-[0.2em] uppercase text-[var(--color-accent-light)]" style={{ fontFamily: "var(--font-nunito)" }}>
-                    Sandra Buchanan
-                  </p>
-                  <div>
-                    <h2 className="text-3xl text-white leading-tight" style={{ fontFamily: "var(--font-dm-serif)" }}>
-                      Walker to<br />30 Minute<br />Runner
-                    </h2>
-                    <div className="mt-4 w-16 h-0.5 bg-[var(--color-accent)]" />
-                    <p className="mt-4 text-sm text-white/70" style={{ fontFamily: "var(--font-nunito)" }}>
-                      A Fitness Guide That Transforms You Into a Runner in 8 Weeks
-                    </p>
-                  </div>
+              <div className="relative max-w-sm mx-auto">
+                <div className="relative aspect-[4/3] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)]">
+                  <Image
+                    src="/images/book/book-trio.jpg"
+                    alt="Walker to 30 Minute Runner book by Sandra Buchanan"
+                    fill
+                    className="object-cover"
+                    priority
+                    sizes="(max-width: 1024px) 90vw, 40vw"
+                  />
                 </div>
               </div>
             </AnimatedSection>

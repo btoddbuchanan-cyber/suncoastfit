@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import Image from "next/image";
 import { AnimatedSection, AnimatedHeading } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 
@@ -17,36 +17,16 @@ export function BookSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Book Visual */}
           <AnimatedSection>
-            <div className="relative max-w-sm mx-auto">
-              {/* Book mockup */}
-              <motion.div
-                whileHover={{ rotateY: -5, scale: 1.02 }}
-                transition={{ duration: 0.4 }}
-                className="relative aspect-[3/4] bg-gradient-to-br from-[var(--color-primary)] to-[var(--color-primary-dark)] rounded-[var(--radius-lg)] shadow-[var(--shadow-xl)] p-8 flex flex-col justify-between"
-                style={{ perspective: "1000px" }}
-              >
-                <div>
-                  <p className="text-sm font-bold tracking-[0.2em] uppercase text-[var(--color-accent-light)] mb-2" style={{ fontFamily: "var(--font-nunito)" }}>
-                    Sandra Buchanan
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-3xl lg:text-4xl text-white leading-tight" style={{ fontFamily: "var(--font-dm-serif)" }}>
-                    Walker to<br />30 Minute<br />Runner
-                  </h3>
-                  <div className="mt-4 w-16 h-0.5 bg-[var(--color-accent)]" />
-                  <p className="mt-4 text-sm text-white/70" style={{ fontFamily: "var(--font-nunito)" }}>
-                    A Fitness Guide That Transforms<br />You Into a Runner in 8 Weeks
-                  </p>
-                </div>
-                {/* Decorative shoe icon */}
-                <div className="absolute top-6 right-6 opacity-20">
-                  <svg viewBox="0 0 60 60" className="w-16 h-16" fill="white" aria-hidden="true">
-                    <path d="M10 40 C10 32, 18 24, 30 24 C36 24, 42 27, 46 30 L54 33 C57 33.5, 60 36, 60 38 L60 40 C60 43, 57 46, 54 46 L16 46 C12.7 46, 10 43.3, 10 40Z" />
-                  </svg>
-                </div>
-              </motion.div>
-
+            <div className="relative max-w-md mx-auto">
+              <div className="relative aspect-[4/3] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)]">
+                <Image
+                  src="/images/book/book-trio.jpg"
+                  alt="Walker to 30 Minute Runner book by Sandra Buchanan"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 90vw, 40vw"
+                />
+              </div>
               {/* Shadow/reflection */}
               <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-3/4 h-8 bg-black/20 blur-xl rounded-full" aria-hidden="true" />
             </div>
