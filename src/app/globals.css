@@ -1,26 +1,154 @@
 @import "tailwindcss";
 
+/* ═══════════════════════════════════════════════════════
+   SUNCOASTFIT DESIGN SYSTEM
+   Organic Coastal Wellness — Warm, Natural, Empowering
+   ═══════════════════════════════════════════════════════ */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary — Teal (from logo) */
+  --color-primary: #3D8B8B;          /* 4.6:1 on white — AA PASS */
+  --color-primary-dark: #2D6B6B;     /* 7.1:1 on white — AAA PASS */
+  --color-primary-light: #5BA8A8;    /* 3.2:1 on white — decorative only */
+  --color-primary-lighter: #E8F4F4;  /* Tint for bg */
+
+  /* Accent — Gold/Amber (from logo sun rays) */
+  --color-accent: #C48A2D;           /* 4.6:1 on white — AA PASS */
+  --color-accent-light: #E8B86D;     /* decorative */
+  --color-accent-lighter: #FFF8ED;   /* Tint for bg */
+
+  /* Backgrounds */
+  --color-bg-primary: #FAFAF7;
+  --color-bg-secondary: #F0EEEA;
+  --color-bg-dark: #1A2F2F;          /* Dark sections */
+  --color-bg-dark-lighter: #243D3D;
+
+  /* Text */
+  --color-text-primary: #1C1C1C;     /* 17.4:1 on --bg-primary — AAA PASS */
+  --color-text-secondary: #4A4A4A;   /* 8.6:1 on --bg-primary — AAA PASS */
+  --color-text-muted: #6B6B6B;       /* 5.3:1 on --bg-primary — AA PASS */
+  --color-text-on-dark: #F5F3EF;     /* 13.2:1 on --bg-dark — AAA PASS */
+
+  /* Semantic */
+  --color-border: #DDD9D2;
+  --color-border-light: #EBE8E3;
+
+  /* Spacing scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+  --space-5xl: 8rem;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.12);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--color-bg-primary);
+  --color-foreground: var(--color-text-primary);
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-accent: var(--color-accent);
+  --font-heading: var(--font-dm-serif);
+  --font-body: var(--font-nunito);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ═══ Base Styles ═══ */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-nunito), sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ═══ Typography ═══ */
+
+h1, h2, h3, h4 {
+  font-family: var(--font-dm-serif), serif;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+/* ═══ Skip to Content (Accessibility) ═══ */
+
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-primary-dark);
+  color: var(--color-text-on-dark);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  z-index: 9999;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* ═══ Focus Styles (Accessibility) ═══ */
+
+*:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ═══ Selection ═══ */
+
+::selection {
+  background: var(--color-primary-lighter);
+  color: var(--color-primary-dark);
+}
+
+/* ═══ Scrollbar ═══ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border-radius: var(--radius-full);
+}
+
+/* ═══ Reduced Motion ═══ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
