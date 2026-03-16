@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { AnimatedSection, AnimatedHeading } from "@/components/AnimatedSection";
 import { Button } from "@/components/Button";
 
@@ -87,41 +88,50 @@ export default function GuidesPage() {
             </h2>
           </AnimatedSection>
 
-          <div className="max-w-2xl mx-auto mb-24">
+          <div className="max-w-4xl mx-auto mb-24">
             {availableGuides.map((guide, i) => (
               <AnimatedSection key={guide.title} delay={i * 0.08}>
                 <a
                   href={guide.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group block bg-white rounded-[var(--radius-xl)] p-8 lg:p-10 shadow-[var(--shadow-md)] border border-[var(--color-border-light)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300"
+                  className="group block bg-white rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-md)] border border-[var(--color-border-light)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300"
                 >
-                  <div className="flex items-start gap-6">
-                    <span className="text-4xl flex-shrink-0" role="img" aria-label={guide.title}>
-                      {guide.icon}
-                    </span>
-                    <div className="flex-1">
+                  <div className="grid md:grid-cols-2">
+                    {/* Product Image */}
+                    <div className="relative aspect-square md:aspect-auto overflow-hidden">
+                      <Image
+                        src="/images/guides/strength-training-starter-kit.jpg"
+                        alt={guide.title}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                    </div>
+
+                    {/* Info */}
+                    <div className="p-8 lg:p-10 flex flex-col justify-center">
                       <h3
-                        className="text-2xl mb-3 group-hover:text-[var(--color-primary)] transition-colors duration-300"
+                        className="text-2xl lg:text-3xl mb-4 group-hover:text-[var(--color-primary)] transition-colors duration-300"
                         style={{ fontFamily: "var(--font-dm-serif)" }}
                       >
                         {guide.title}
                       </h3>
                       <p
-                        className="text-[var(--color-text-secondary)] leading-relaxed mb-5"
+                        className="text-[var(--color-text-secondary)] leading-relaxed mb-6"
                         style={{ fontFamily: "var(--font-nunito)" }}
                       >
                         {guide.description}
                       </p>
-                      <div className="flex items-center gap-4">
+                      <div className="flex flex-wrap items-center gap-4">
                         <span
-                          className="text-lg font-bold text-[var(--color-primary)]"
+                          className="text-xl font-bold text-[var(--color-primary)]"
                           style={{ fontFamily: "var(--font-nunito)" }}
                         >
                           {guide.price}
                         </span>
                         <span
-                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[var(--radius-full)] bg-[var(--color-accent)] text-[var(--color-text-primary)] text-sm font-semibold group-hover:bg-[var(--color-accent-light)] shadow-[var(--shadow-sm)] transition-all duration-300"
+                          className="inline-flex items-center gap-2 px-6 py-3 rounded-[var(--radius-full)] bg-[var(--color-accent)] text-[var(--color-text-primary)] text-sm font-semibold group-hover:bg-[var(--color-accent-light)] shadow-[var(--shadow-sm)] transition-all duration-300"
                           style={{ fontFamily: "var(--font-nunito)" }}
                         >
                           Get the Guide
