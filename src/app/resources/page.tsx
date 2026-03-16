@@ -22,9 +22,9 @@ const resources = [
   },
   {
     title: "Fitness Guides",
-    subtitle: "Coming Soon",
+    subtitle: "Guides",
     description:
-      "Downloadable guides on topics like getting started with strength training after 50, building a home workout routine, stretching for mobility, and more. Check back soon!",
+      "Strength Training Starter Kit for 50+ now available! A step-by-step program designed for adults over 50 who want to build strength safely and confidently at home. More guides coming soon.",
     href: "/resources/guides",
     image: "/images/services/walker-to-runner.png",
     cta: "View Guides",

@@ -5,16 +5,21 @@ import { Button } from "@/components/Button";
 export const metadata: Metadata = {
   title: "Guides",
   description:
-    "Fitness guides from Sandra Buchanan for adults 50+. Strength training, stretching, home workouts, and more — coming soon.",
+    "Fitness guides from Sandra Buchanan for adults 50+. Strength Training Starter Kit, stretching, home workouts, and more.",
 };
 
-const upcomingGuides = [
+const availableGuides = [
   {
-    title: "Getting Started with Strength Training After 50",
+    title: "Strength Training Starter Kit for 50+",
     description:
-      "A beginner-friendly guide covering essential exercises, proper form, and how to build a safe, effective routine.",
+      "A clear, step-by-step strength training program designed specifically for adults over 50 who want to build strength safely and confidently at home. Created by a certified personal trainer and former occupational therapist.",
+    price: "$15.00 USD",
+    href: "https://payhip.com/b/p2Qnh",
     icon: "💪",
   },
+];
+
+const upcomingGuides = [
   {
     title: "Building a Home Workout Routine",
     description:
@@ -64,17 +69,77 @@ export default function GuidesPage() {
               style={{ fontFamily: "var(--font-nunito)" }}
             >
               Practical, easy-to-follow guides to help you stay strong, flexible,
-              and active after 50. New guides coming soon!
+              and active after 50.
             </p>
           </AnimatedHeading>
         </div>
       </section>
 
-      {/* Upcoming Guides */}
+      {/* Available Guides */}
       <section className="py-16 lg:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimatedSection>
-            <div className="text-center mb-12">
+            <h2
+              className="text-2xl lg:text-3xl mb-10 text-center"
+              style={{ fontFamily: "var(--font-dm-serif)" }}
+            >
+              Available Now
+            </h2>
+          </AnimatedSection>
+
+          <div className="max-w-2xl mx-auto mb-24">
+            {availableGuides.map((guide, i) => (
+              <AnimatedSection key={guide.title} delay={i * 0.08}>
+                <a
+                  href={guide.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block bg-white rounded-[var(--radius-xl)] p-8 lg:p-10 shadow-[var(--shadow-md)] border border-[var(--color-border-light)] hover:shadow-[var(--shadow-lg)] hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div className="flex items-start gap-6">
+                    <span className="text-4xl flex-shrink-0" role="img" aria-label={guide.title}>
+                      {guide.icon}
+                    </span>
+                    <div className="flex-1">
+                      <h3
+                        className="text-2xl mb-3 group-hover:text-[var(--color-primary)] transition-colors duration-300"
+                        style={{ fontFamily: "var(--font-dm-serif)" }}
+                      >
+                        {guide.title}
+                      </h3>
+                      <p
+                        className="text-[var(--color-text-secondary)] leading-relaxed mb-5"
+                        style={{ fontFamily: "var(--font-nunito)" }}
+                      >
+                        {guide.description}
+                      </p>
+                      <div className="flex items-center gap-4">
+                        <span
+                          className="text-lg font-bold text-[var(--color-primary)]"
+                          style={{ fontFamily: "var(--font-nunito)" }}
+                        >
+                          {guide.price}
+                        </span>
+                        <span
+                          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[var(--radius-full)] bg-[var(--color-accent)] text-[var(--color-text-primary)] text-sm font-semibold group-hover:bg-[var(--color-accent-light)] shadow-[var(--shadow-sm)] transition-all duration-300"
+                          style={{ fontFamily: "var(--font-nunito)" }}
+                        >
+                          Get the Guide
+                          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          {/* Upcoming Guides */}
+          <AnimatedSection>
+            <div className="text-center mb-10">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-[var(--radius-full)] bg-[var(--color-accent-lighter)] text-[var(--color-accent)] text-sm font-semibold mb-4" style={{ fontFamily: "var(--font-nunito)" }}>
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -85,16 +150,15 @@ export default function GuidesPage() {
                 className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto"
                 style={{ fontFamily: "var(--font-nunito)" }}
               >
-                I&apos;m working on these guides right now. Sign up to be notified
-                when they&apos;re ready!
+                More guides are on the way!
               </p>
             </div>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {upcomingGuides.map((guide, i) => (
               <AnimatedSection key={guide.title} delay={i * 0.08}>
-                <div className="h-full bg-white rounded-[var(--radius-xl)] p-8 shadow-[var(--shadow-sm)] border border-[var(--color-border-light)] hover:shadow-[var(--shadow-md)] transition-shadow duration-300">
+                <div className="h-full bg-white rounded-[var(--radius-xl)] p-8 shadow-[var(--shadow-sm)] border border-[var(--color-border-light)] opacity-75">
                   <span className="text-3xl mb-4 block" role="img" aria-label={guide.title}>
                     {guide.icon}
                   </span>
@@ -131,8 +195,8 @@ export default function GuidesPage() {
               className="text-lg text-[var(--color-text-secondary)] mb-8"
               style={{ fontFamily: "var(--font-nunito)" }}
             >
-              Send me a message and I&apos;ll let you know as soon as the guides
-              are available for download.
+              Send me a message and I&apos;ll let you know as soon as new guides
+              are available.
             </p>
             <Button href="/contact" variant="primary" size="lg">
               Get Notified
