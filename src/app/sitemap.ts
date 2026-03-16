@@ -15,10 +15,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: baseUrl, lastModified, changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/about`, lastModified, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/services`, lastModified, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/services/pilates`, lastModified, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/services/personal-training`, lastModified, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/services/walker-to-runner`, lastModified, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/services/walker-to-runner`, lastModified, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/resources`, lastModified, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/resources/guides`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/videos`, lastModified, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/book`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.6 },

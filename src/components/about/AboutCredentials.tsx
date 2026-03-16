@@ -6,7 +6,7 @@ import { AnimatedHeading } from "@/components/AnimatedSection";
 const credentials = [
   { title: "ACE Certified", subtitle: "Personal Trainer", icon: "🏅" },
   { title: "Occupational", subtitle: "Therapy Degree", icon: "🎓" },
-  { title: "Mat Pilates", subtitle: "Certified Instructor", icon: "🧘" },
+  { title: "Fitness Over 50", subtitle: "Specialist", icon: "🧘" },
   { title: "Osteofit", subtitle: "Certified Instructor", icon: "🦴" },
   { title: "Aquatic Fitness", subtitle: "Specialist", icon: "🏊" },
   { title: "Weight Training", subtitle: "Certification", icon: "💪" },

@@ -7,24 +7,6 @@ import { AnimatedHeading } from "@/components/AnimatedSection";
 
 const services = [
   {
-    title: "Pilates Plus",
-    description:
-      "Strengthen your core, improve posture, and find your mind-body connection through inspired mat Pilates classes. All levels welcome.",
-    href: "/services/pilates",
-    image: "/images/services/pilates-plus.png",
-    accent: "var(--color-primary)",
-    bgTint: "var(--color-primary-lighter)",
-  },
-  {
-    title: "Personal Training",
-    description:
-      "One-on-one or small group sessions tailored to your goals. Mobile training at your home, gym, pool, or favourite outdoor space.",
-    href: "/services/personal-training",
-    image: "/images/services/personal-training.png",
-    accent: "var(--color-accent)",
-    bgTint: "var(--color-accent-lighter)",
-  },
-  {
     title: "Walker to Runner",
     description:
       "An 8-week program that transforms walkers into confident runners. Gradual, safe, and incredibly rewarding.",
@@ -32,6 +14,24 @@ const services = [
     image: "/images/services/walker-to-runner.png",
     accent: "var(--color-primary-dark)",
     bgTint: "var(--color-primary-lighter)",
+  },
+  {
+    title: "YouTube Workouts",
+    description:
+      "Free low-impact workouts you can do at home. Standing routines, dumbbell sessions, stretching, and more — all designed for adults 50+.",
+    href: "/videos",
+    image: "/images/services/pilates-plus.png",
+    accent: "var(--color-primary)",
+    bgTint: "var(--color-primary-lighter)",
+  },
+  {
+    title: "My Book",
+    description:
+      "Walker to 30 Minute Runner — a powerful yet simple fitness program that transforms you into a runner in about 8 weeks.",
+    href: "/book",
+    image: "/images/book/book-trio.jpg",
+    accent: "var(--color-accent)",
+    bgTint: "var(--color-accent-lighter)",
   },
 ];
 

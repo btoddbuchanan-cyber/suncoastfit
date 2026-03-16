@@ -70,28 +70,6 @@ export function AboutStory() {
           </div>
         </AnimatedSection>
 
-        {/* Pilates section */}
-        <AnimatedSection delay={0.1}>
-          <div className="mt-16 p-8 lg:p-12 bg-[var(--color-primary-lighter)] rounded-[var(--radius-xl)] border border-[var(--color-primary)]/10">
-            <h2
-              className="text-2xl lg:text-3xl mb-4 text-[var(--color-primary-dark)]"
-              style={{ fontFamily: "var(--font-dm-serif)" }}
-            >
-              My Love for Pilates
-            </h2>
-            <p
-              className="text-lg text-[var(--color-text-secondary)] leading-relaxed"
-              style={{ fontFamily: "var(--font-nunito)" }}
-            >
-              One of my favourite forms of exercise, both as an instructor and as a
-              participant, is Mat Pilates. The benefits include increased core strength
-              (which helps prevent injury during other activities), improved posture, and
-              a deeper mind-body connection. I also teach Osteofit, a class designed by
-              the BC Women&apos;s Hospital Osteoporosis Program.
-            </p>
-          </div>
-        </AnimatedSection>
-
         {/* Todd's Story */}
         <AnimatedSection delay={0.15}>
           <div className="mt-16">

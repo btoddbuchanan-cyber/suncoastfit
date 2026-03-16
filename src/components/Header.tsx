@@ -7,17 +7,16 @@ import { motion, AnimatePresence } from "motion/react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/services/walker-to-runner", label: "Walker to Runner" },
   {
-    href: "/services",
-    label: "Services",
+    href: "/resources",
+    label: "Resources",
     children: [
-      { href: "/services/pilates", label: "Pilates Plus" },
-      { href: "/services/personal-training", label: "Personal Training" },
-      { href: "/services/walker-to-runner", label: "Walker to Runner" },
+      { href: "/book", label: "My Book" },
+      { href: "/resources/guides", label: "Guides" },
     ],
   },
   { href: "/videos", label: "Videos" },
-  { href: "/book", label: "Book" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Connect" },
 ];

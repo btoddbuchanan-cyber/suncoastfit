@@ -5,7 +5,7 @@ import { AnimatedSection, AnimatedHeading } from "@/components/AnimatedSection";
 export const metadata: Metadata = {
   title: "Connect",
   description:
-    "Get in touch with Sandra Buchanan at Suncoastfit. Ask about Pilates classes, personal training, or the Walker to Runner program on the Sunshine Coast, BC.",
+    "Get in touch with Sandra Buchanan at Suncoastfit. Ask about the Walker to Runner program, YouTube workouts, or fitness on the Sunshine Coast, BC.",
 };
 
 export default function ContactPage() {

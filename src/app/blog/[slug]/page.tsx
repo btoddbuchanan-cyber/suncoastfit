@@ -332,8 +332,8 @@ export default async function BlogPostPage({ params }: PageProps) {
                 className="text-[var(--color-text-secondary)] mb-6"
                 style={{ fontFamily: "var(--font-nunito)" }}
               >
-                Whether it&apos;s Pilates, personal training, or learning to
-                run — Sandra would love to help.
+                Whether it&apos;s learning to run, finding the right workout, or
+                staying active over 50 — Sandra would love to help.
               </p>
               <Button href="/contact" variant="primary" size="lg">
                 Get in Touch

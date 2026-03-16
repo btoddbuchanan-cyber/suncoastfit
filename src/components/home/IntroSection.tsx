@@ -75,7 +75,7 @@ export function IntroSection() {
 
             <AnimatedSection delay={0.3}>
               <div className="flex flex-wrap gap-4">
-                {["Mat Pilates", "Personal Training", "Osteofit", "Aquatic Fitness", "Walker to Runner"].map((cert) => (
+                {["ACE Certified", "Osteofit", "Aquatic Fitness", "Weight Training", "Walker to Runner"].map((cert) => (
                   <span
                     key={cert}
                     className="px-4 py-2 rounded-[var(--radius-full)] text-sm font-medium bg-[var(--color-bg-secondary)] text-[var(--color-text-secondary)] border border-[var(--color-border)]"

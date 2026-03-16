@@ -25,11 +25,11 @@ export const metadata: Metadata = {
     template: "%s | Suncoastfit",
   },
   description:
-    "Personalized mobile fitness training for mature adults on the Sunshine Coast, BC. ACE-certified personal trainer Sandra Buchanan offers Pilates, personal training, and the Walker to Runner program.",
+    "Personalized mobile fitness training for mature adults on the Sunshine Coast, BC. ACE-certified personal trainer Sandra Buchanan offers the Walker to Runner program and free YouTube workouts.",
   keywords: [
     "personal trainer sunshine coast",
     "mobile fitness training",
-    "pilates classes sunshine coast bc",
+    "fitness over 50",
     "walker to runner program",
     "fitness for mature adults",
     "Sandra Buchanan trainer",
@@ -88,24 +88,16 @@ const jsonLd = {
       "@type": "Offer",
       itemOffered: {
         "@type": "Service",
-        name: "Pilates Plus Classes",
-        description: "Mat Pilates classes for all levels focusing on core strength and mind-body connection.",
-      },
-    },
-    {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
-        name: "Personal Training",
-        description: "One-on-one or small group mobile training sessions tailored to your goals.",
-      },
-    },
-    {
-      "@type": "Offer",
-      itemOffered: {
-        "@type": "Service",
         name: "Walker to Runner Program",
         description: "An 8-week program that transforms walkers into confident runners.",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "YouTube Fitness Workouts",
+        description: "Free low-impact workouts for adults 50+ including standing routines, dumbbell sessions, and stretching.",
       },
     },
   ],

@@ -2,20 +2,24 @@ import Link from "next/link";
 
 const footerLinks = [
   {
-    title: "Services",
+    title: "Programs",
     links: [
-      { href: "/services/pilates", label: "Pilates Plus" },
-      { href: "/services/personal-training", label: "Personal Training" },
       { href: "/services/walker-to-runner", label: "Walker to Runner" },
+      { href: "/videos", label: "Videos" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { href: "/book", label: "My Book" },
+      { href: "/resources/guides", label: "Guides" },
+      { href: "/blog", label: "Blog" },
     ],
   },
   {
     title: "Explore",
     links: [
       { href: "/about", label: "About Sandra" },
-      { href: "/videos", label: "Videos" },
-      { href: "/book", label: "My Book" },
-      { href: "/blog", label: "Blog" },
       { href: "/contact", label: "Connect" },
     ],
   },

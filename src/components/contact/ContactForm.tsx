@@ -137,9 +137,9 @@ export function ContactForm() {
           <option value="" disabled>
             Select an option
           </option>
-          <option value="pilates">Pilates Plus Classes</option>
-          <option value="personal-training">Personal Training</option>
           <option value="walker-to-runner">Walker to Runner Program</option>
+          <option value="youtube">YouTube Workouts</option>
+          <option value="book">The Book</option>
           <option value="other">Other</option>
         </select>
       </div>

@@ -27,9 +27,9 @@ export function CTASection() {
             className="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-10 max-w-xl mx-auto"
             style={{ fontFamily: "var(--font-nunito)" }}
           >
-            Whether you&apos;re looking to build strength through Pilates, get
-            personalized training, or discover the joy of running — let&apos;s
-            start your journey together.
+            Whether you&apos;re looking to build strength, stay active, or
+            discover the joy of running — let&apos;s start your journey
+            together.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button href="/contact" variant="primary" size="lg">
