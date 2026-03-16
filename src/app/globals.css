@@ -70,26 +70,28 @@
 
 /* ═══ Base Styles ═══ */
 
-html {
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: var(--color-bg-primary);
-  color: var(--color-text-primary);
-  font-family: var(--font-nunito), sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-nunito), sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-/* ═══ Typography ═══ */
+  /* ═══ Typography ═══ */
 
-h1, h2, h3, h4 {
-  font-family: var(--font-dm-serif), serif;
-  color: var(--color-text-primary);
-  line-height: 1.2;
+  h1, h2, h3, h4 {
+    font-family: var(--font-dm-serif), serif;
+    color: var(--color-text-primary);
+    line-height: 1.2;
+  }
 }
 
 /* ═══ Skip to Content (Accessibility) ═══ */
