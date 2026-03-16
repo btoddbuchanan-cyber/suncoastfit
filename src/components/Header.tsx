@@ -16,6 +16,7 @@ const navLinks = [
       { href: "/services/walker-to-runner", label: "Walker to Runner" },
     ],
   },
+  { href: "/videos", label: "Videos" },
   { href: "/book", label: "Book" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Connect" },

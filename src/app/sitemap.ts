@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/services/pilates`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/services/personal-training`, lastModified, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/services/walker-to-runner`, lastModified, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/videos`, lastModified, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/book`, lastModified, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/blog`, lastModified, changeFrequency: "weekly", priority: 0.6 },
     ...blogEntries,

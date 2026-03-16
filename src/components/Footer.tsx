@@ -13,6 +13,7 @@ const footerLinks = [
     title: "Explore",
     links: [
       { href: "/about", label: "About Sandra" },
+      { href: "/videos", label: "Videos" },
       { href: "/book", label: "My Book" },
       { href: "/blog", label: "Blog" },
       { href: "/contact", label: "Connect" },
