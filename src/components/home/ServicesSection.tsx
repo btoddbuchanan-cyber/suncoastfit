@@ -7,15 +7,6 @@ import { AnimatedHeading } from "@/components/AnimatedSection";
 
 const services = [
   {
-    title: "Walker to Runner",
-    description:
-      "An 8-week program that transforms walkers into confident runners. Gradual, safe, and incredibly rewarding.",
-    href: "/services/walker-to-runner",
-    image: "/images/services/walker-to-runner.png",
-    accent: "var(--color-primary-dark)",
-    bgTint: "var(--color-primary-lighter)",
-  },
-  {
     title: "YouTube Workouts",
     description:
       "Low-impact workouts you can do at home. Standing routines, dumbbell sessions, stretching, and more — all designed for adults 50+.",
@@ -40,6 +31,15 @@ const services = [
     href: "/resources/guides",
     image: "/images/guides/strength-training-starter-kit.jpg",
     accent: "var(--color-primary)",
+    bgTint: "var(--color-primary-lighter)",
+  },
+  {
+    title: "Walker to Runner",
+    description:
+      "An 8-week program that transforms walkers into confident runners. Gradual, safe, and incredibly rewarding.",
+    href: "/services/walker-to-runner",
+    image: "/images/services/walker-to-runner.png",
+    accent: "var(--color-primary-dark)",
     bgTint: "var(--color-primary-lighter)",
   },
 ];
