@@ -7,9 +7,9 @@ import { BookSection } from "@/components/home/BookSection";
 import { CTASection } from "@/components/home/CTASection";
 
 export const metadata: Metadata = {
-  title: "Suncoastfit — Mobile Personal & Group Fitness Training | Sunshine Coast, BC",
+  title: "Suncoastfit — Fitness Over 50 with Sandra",
   description:
-    "Feel amazing doing what you love. ACE-certified trainer Sandra Buchanan brings fitness to adults 50+ on the Sunshine Coast, BC. Walker to Runner program and free YouTube workouts.",
+    "Feel amazing doing what you love. ACE-certified trainer Sandra Buchanan brings fitness to adults 50+. Walker to Runner program and free YouTube workouts.",
 };
 
 export default function HomePage() {

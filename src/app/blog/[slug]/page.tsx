@@ -258,7 +258,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     className="text-sm text-[var(--color-text-muted)]"
                     style={{ fontFamily: "var(--font-nunito)" }}
                   >
-                    ACE Certified Personal Trainer · Sunshine Coast, BC
+                    ACE Certified Personal Trainer
                   </p>
                 </div>
               </div>
@@ -268,7 +268,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               >
                 Sandra has been helping people move better and feel stronger for
                 over 20 years. She specializes in fitness for mature adults and
-                brings training directly to you on the Sunshine Coast.
+                brings training directly to you.
               </p>
             </div>
           </AnimatedSection>

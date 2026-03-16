@@ -72,7 +72,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-[var(--color-text-on-dark)]/70 leading-relaxed mb-6" style={{ fontFamily: "var(--font-nunito)" }}>
-              Personalized mobile fitness training for mature adults on the beautiful Sunshine Coast, BC.
+              Fitness over 50 with Sandra. Personalized training, free YouTube workouts, and the Walker to Runner program.
             </p>
             <div className="flex gap-3">
               <SocialIcon type="facebook" />
@@ -124,9 +124,6 @@ export function Footer() {
                 <a href="tel:+16042205342" className="text-[var(--color-text-on-dark)]/70 hover:text-[var(--color-accent-light)] transition-colors duration-200">
                   604-220-5342
                 </a>
-              </p>
-              <p className="text-sm text-[var(--color-text-on-dark)]/70">
-                Sunshine Coast, BC, Canada
               </p>
             </div>
             <Link

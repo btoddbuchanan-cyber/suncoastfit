@@ -6,7 +6,7 @@ import { TestimonialCard } from "@/components/TestimonialCard";
 export const metadata: Metadata = {
   title: "Walker to Runner — 8-Week Program",
   description:
-    "Transform from walker to runner in 8 weeks with Sandra Buchanan's proven program on the Sunshine Coast, BC. Safe, gradual, and incredibly rewarding.",
+    "Transform from walker to runner in 8 weeks with Sandra Buchanan's proven program. Safe, gradual, and incredibly rewarding for adults 50+.",
 };
 
 export default function WalkerToRunnerPage() {

@@ -22,7 +22,7 @@ export function AboutHero() {
             <div className="relative aspect-[3/4] max-w-md mx-auto rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)]">
               <Image
                 src="/images/about/sandra-portrait.jpg"
-                alt="Sandra Buchanan — Personal Trainer on the Sunshine Coast, BC"
+                alt="Sandra Buchanan — ACE Certified Personal Trainer"
                 fill
                 className="object-cover"
                 priority
@@ -34,7 +34,7 @@ export function AboutHero() {
                   Sandra Buchanan
                 </p>
                 <p className="text-xs text-white/80 drop-shadow-md" style={{ fontFamily: "var(--font-nunito)" }}>
-                  Sunshine Coast, BC
+                  ACE Certified Personal Trainer
                 </p>
               </div>
             </div>

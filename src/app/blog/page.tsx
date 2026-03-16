@@ -6,7 +6,7 @@ import { blogPosts } from "@/data/blog-posts";
 export const metadata: Metadata = {
   title: "Blog — Fitness & Healthy Living",
   description:
-    "Fitness tips, healthy living articles, and training advice from Sandra Buchanan at Suncoastfit on the Sunshine Coast, BC.",
+    "Fitness tips, healthy living articles, and training advice from Sandra Buchanan at Suncoastfit for adults 50+.",
 };
 
 function formatDate(dateStr: string) {

@@ -21,13 +21,13 @@ const nunito = Nunito_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL("https://suncoastfit.com"),
   title: {
-    default: "Suncoastfit — Mobile Personal & Group Fitness Training | Sunshine Coast, BC",
+    default: "Suncoastfit — Fitness Over 50 with Sandra",
     template: "%s | Suncoastfit",
   },
   description:
-    "Personalized mobile fitness training for mature adults on the Sunshine Coast, BC. ACE-certified personal trainer Sandra Buchanan offers the Walker to Runner program and free YouTube workouts.",
+    "Personalized fitness training for adults 50+. ACE-certified personal trainer Sandra Buchanan offers the Walker to Runner program and free YouTube workouts.",
   keywords: [
-    "personal trainer sunshine coast",
+    "personal trainer over 50",
     "mobile fitness training",
     "fitness over 50",
     "walker to runner program",
@@ -42,15 +42,15 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_CA",
     siteName: "Suncoastfit",
-    title: "Suncoastfit — Mobile Personal & Group Fitness Training",
+    title: "Suncoastfit — Fitness Over 50 with Sandra",
     description:
-      "Personalized mobile fitness training for mature adults on the Sunshine Coast, BC.",
+      "Personalized fitness training for adults 50+. Walker to Runner program and free YouTube workouts.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Suncoastfit — Mobile Fitness Training",
+    title: "Suncoastfit — Fitness Over 50 with Sandra",
     description:
-      "Personalized mobile fitness training for mature adults on the Sunshine Coast, BC.",
+      "Personalized fitness training for adults 50+. Walker to Runner program and free YouTube workouts.",
   },
   robots: {
     index: true,
@@ -63,14 +63,12 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "Suncoastfit",
   description:
-    "Personalized mobile fitness training for mature adults on the Sunshine Coast, BC. ACE-certified personal trainer Sandra Buchanan.",
+    "Personalized fitness training for adults 50+. ACE-certified personal trainer Sandra Buchanan.",
   url: "https://suncoastfit.com",
   telephone: "+1-604-220-5342",
   email: "suncoastfit@gmail.com",
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Sunshine Coast",
-    addressRegion: "BC",
     addressCountry: "CA",
   },
   founder: {

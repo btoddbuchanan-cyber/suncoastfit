@@ -25,9 +25,8 @@ export function AboutStory() {
 
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-6">
               Being a long-time lover of fitness, I made a career change from rehabilitation
-              into the fitness world as a personal trainer and group fitness instructor. After
-              moving to the Sunshine Coast BC, my dream of starting a fitness company came true
-              with the launch of Suncoastfit.
+              into the fitness world as a personal trainer and group fitness instructor. My
+              dream of starting a fitness company came true with the launch of Suncoastfit.
             </p>
 
             <p className="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-8">
@@ -43,7 +42,7 @@ export function AboutStory() {
             <div className="relative aspect-square rounded-[var(--radius-lg)] overflow-hidden">
               <Image
                 src="/images/about/sandra-paddleboard.jpg"
-                alt="Sandra paddleboarding on the Sunshine Coast"
+                alt="Sandra paddleboarding"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 50vw, 33vw"
@@ -61,7 +60,7 @@ export function AboutStory() {
             <div className="relative aspect-square rounded-[var(--radius-lg)] overflow-hidden col-span-2 md:col-span-1">
               <Image
                 src="/images/about/gallery-1.jpg"
-                alt="Sandra outdoors on the Sunshine Coast"
+                alt="Sandra outdoors"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 33vw"

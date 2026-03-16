@@ -17,7 +17,7 @@ export function IntroSection() {
               <div className="absolute inset-0 bg-[var(--color-primary-lighter)] rounded-[40%_60%_70%_30%/40%_50%_60%_50%] overflow-hidden">
                 <Image
                   src="/images/about/sandra-portrait.jpg"
-                  alt="Sandra Buchanan by the water on the Sunshine Coast"
+                  alt="Sandra Buchanan by the water"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 80vw, 30vw"
@@ -67,9 +67,8 @@ export function IntroSection() {
                 className="text-lg text-[var(--color-text-secondary)] leading-relaxed mb-8"
                 style={{ fontFamily: "var(--font-nunito)" }}
               >
-                I bring the training to you — your home, your gym, your favourite outdoor
-                space on the beautiful Sunshine Coast. Whether you train alone or with friends,
-                every program is built for your body, your goals, and your life.
+                Train in your home, your gym, your favourite outdoor space. Workouts
+                built for your body, your goals, your life.
               </p>
             </AnimatedSection>
 

@@ -32,7 +32,7 @@ export function HeroSection() {
                 className="inline-block px-4 py-1.5 rounded-[var(--radius-full)] text-xs font-bold tracking-widest uppercase bg-[var(--color-accent)]/10 text-[var(--color-accent)] mb-6"
                 style={{ fontFamily: "var(--font-nunito)" }}
               >
-                Sunshine Coast, BC
+                Fitness Over 50
               </span>
             </motion.div>
 
@@ -54,8 +54,8 @@ export function HeroSection() {
               className="text-lg text-[var(--color-text-secondary)] mb-8 leading-relaxed"
               style={{ fontFamily: "var(--font-nunito)" }}
             >
-              Personalized fitness training that comes to you. Build strength,
-              confidence, and joy through movement — at your pace, in your space.
+              Build strength, confidence, and joy through movement — at your
+              pace, in your space. Free workouts, programs, and resources for adults 50+.
             </motion.p>
 
             <motion.div
@@ -100,7 +100,7 @@ export function HeroSection() {
             <div className="relative aspect-[4/5] rounded-[var(--radius-xl)] overflow-hidden shadow-[var(--shadow-xl)]">
               <Image
                 src="/images/hero/hero-home.jpg"
-                alt="Sandra Buchanan stretching outdoors on the Sunshine Coast"
+                alt="Sandra Buchanan stretching outdoors"
                 fill
                 className="object-cover"
                 priority

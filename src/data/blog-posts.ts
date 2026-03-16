@@ -35,7 +35,7 @@ I often tell my clients: the best exercise is the one you'll actually do. And wa
 
 There's a reason people say they need to "clear their head" with a walk. Walking, especially outdoors, has been shown to reduce cortisol levels, ease symptoms of anxiety and depression, and improve overall mood.
 
-Here on the Sunshine Coast, we're lucky to have incredible trails and waterfront paths. A morning walk along the seawall or through the forest isn't just exercise — it's therapy.
+If you're lucky enough to have trails and waterfront paths nearby, take advantage of them. A morning walk along a path or through the forest isn't just exercise — it's therapy.
 
 ## How to Get Started
 
@@ -101,7 +101,7 @@ One of my students, Janice, told me: "Sandra's classes are challenging but you c
 
 If you've been thinking about trying Pilates, I encourage you to take that first step. You don't need to be flexible, fit, or experienced. You just need to be willing to show up and try.
 
-I offer Pilates Plus classes right here on the Sunshine Coast, and every new student gets personal attention to make sure they feel comfortable and supported from day one.`,
+Check out my YouTube channel for free Pilates-inspired workouts you can do at home. Every workout is designed with beginners in mind, and I walk you through every move.`,
   },
   {
     slug: "core-strength-aging-well",
@@ -149,7 +149,7 @@ Start with what feels manageable and add repetitions as you get stronger. Consis
 
 This is exactly why I'm so passionate about Pilates. Every Pilates exercise is, at its heart, a core exercise. The method was specifically designed to build this deep, functional strength — and it does so in a way that's gentle on the joints and accessible at any fitness level.
 
-If you're looking for a structured way to build your core strength, I'd love to welcome you to one of my classes on the Sunshine Coast.`,
+If you're looking for a structured way to build your core strength, check out my free YouTube workouts — many focus specifically on core and balance.`,
   },
   {
     slug: "why-light-weights-matter-after-50",
@@ -201,7 +201,7 @@ A study in the Journal of Bone and Mineral Research found that women who did reg
 
 If you're new to weight training, I always recommend starting with a professional who can assess your movement patterns and guide your form. A few sessions of one-on-one training can set you up with the knowledge and confidence to train safely on your own.
 
-I offer mobile personal training right here on the Sunshine Coast — I come to you with everything we need. No gym membership required.`,
+Check out my YouTube channel for free dumbbell and kettlebell workouts designed for adults 50+. No gym membership required — just a set of light weights and a little space.`,
   },
   {
     slug: "getting-up-from-the-floor-safely",
@@ -314,6 +314,6 @@ I've worked with clients who started strength training in their 50s, 60s, and 70
 
 If you've been thinking about starting, here's my advice: don't wait for the perfect time. Start where you are, with what you have. A few sessions with a qualified trainer can set you on a path that changes everything.
 
-I'd love to help you get started. Reach out anytime — I'm right here on the Sunshine Coast, and I'd be honoured to be part of your journey.`,
+I'd love to help you get started. Reach out anytime — I'd be honoured to be part of your journey.`,
   },
 ];

@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore Suncoastfit services: the Walker to Runner 8-week program on the Sunshine Coast, BC.",
+    "Explore Suncoastfit services: the Walker to Runner 8-week program for adults 50+.",
 };
 
 export default function ServicesPage() {

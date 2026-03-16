@@ -7,7 +7,7 @@ import { AboutCTA } from "@/components/about/AboutCTA";
 export const metadata: Metadata = {
   title: "About Sandra Buchanan",
   description:
-    "Meet Sandra Buchanan — ACE-certified Personal Trainer and Occupational Therapist on the Sunshine Coast, BC. Learn about her journey from rehabilitation to fitness.",
+    "Meet Sandra Buchanan — ACE-certified Personal Trainer and Occupational Therapist. Learn about her journey from rehabilitation to fitness over 50.",
 };
 
 export default function AboutPage() {

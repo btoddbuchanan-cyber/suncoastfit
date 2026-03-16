@@ -5,7 +5,7 @@ import { AnimatedSection, AnimatedHeading } from "@/components/AnimatedSection";
 export const metadata: Metadata = {
   title: "Connect",
   description:
-    "Get in touch with Sandra Buchanan at Suncoastfit. Ask about the Walker to Runner program, YouTube workouts, or fitness on the Sunshine Coast, BC.",
+    "Get in touch with Sandra Buchanan at Suncoastfit. Ask about the Walker to Runner program, YouTube workouts, or fitness over 50.",
 };
 
 export default function ContactPage() {
@@ -61,11 +61,10 @@ export default function ContactPage() {
 
                   <div>
                     <h2 className="text-2xl mb-4" style={{ fontFamily: "var(--font-dm-serif)" }}>
-                      Location
+                      About
                     </h2>
                     <p className="text-[var(--color-text-secondary)]" style={{ fontFamily: "var(--font-nunito)" }}>
-                      Suncoastfit is located on the beautiful<br />
-                      <span className="font-semibold text-[var(--color-text-primary)]">Sunshine Coast, BC, Canada</span>
+                      Fitness over 50 with Sandra. Free YouTube workouts, the Walker to Runner program, and more.
                     </p>
                   </div>
 
