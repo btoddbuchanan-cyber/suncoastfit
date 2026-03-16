@@ -41,6 +41,26 @@ export default function ContactPage() {
                 <div className="space-y-8">
                   <div>
                     <h2 className="text-2xl mb-4" style={{ fontFamily: "var(--font-dm-serif)" }}>
+                      Get in Touch
+                    </h2>
+                    <div className="space-y-3" style={{ fontFamily: "var(--font-nunito)" }}>
+                      <p className="text-[var(--color-text-secondary)]">
+                        <span className="font-semibold text-[var(--color-text-primary)]">Email</span><br />
+                        <a href="mailto:suncoastfit@gmail.com" className="text-[var(--color-primary)] hover:text-[var(--color-primary-dark)] transition-colors">
+                          suncoastfit@gmail.com
+                        </a>
+                      </p>
+                      <p className="text-[var(--color-text-secondary)]">
+                        <span className="font-semibold text-[var(--color-text-primary)]">Phone</span><br />
+                        <a href="tel:+16042205342" className="text-[var(--color-primary)] hover:text-[var(--color-primary-dark)] transition-colors">
+                          604-220-5342
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h2 className="text-2xl mb-4" style={{ fontFamily: "var(--font-dm-serif)" }}>
                       Location
                     </h2>
                     <p className="text-[var(--color-text-secondary)]" style={{ fontFamily: "var(--font-nunito)" }}>

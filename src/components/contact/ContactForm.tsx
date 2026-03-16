@@ -4,10 +4,33 @@ import { useState, FormEvent } from "react";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(false);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch("https://formspree.io/suncoastfit@gmail.com", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -139,13 +162,25 @@ export function ContactForm() {
         />
       </div>
 
+      {error && (
+        <div className="mb-6 p-4 rounded-[var(--radius-md)] bg-red-50 border border-red-200 text-red-700 text-sm" style={{ fontFamily: "var(--font-nunito)" }}>
+          Something went wrong. Please try again or email{" "}
+          <a href="mailto:suncoastfit@gmail.com" className="underline font-semibold">suncoastfit@gmail.com</a> directly.
+        </div>
+      )}
+
       <button
         type="submit"
-        className="w-full sm:w-auto px-8 py-3.5 rounded-[var(--radius-full)] bg-[var(--color-accent)] text-[var(--color-text-primary)] font-semibold hover:bg-[var(--color-accent-light)] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all duration-300"
+        disabled={submitting}
+        className="w-full sm:w-auto px-8 py-3.5 rounded-[var(--radius-full)] bg-[var(--color-accent)] text-[var(--color-text-primary)] font-semibold hover:bg-[var(--color-accent-light)] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all duration-300 disabled:opacity-60 disabled:cursor-not-allowed"
         style={{ fontFamily: "var(--font-nunito)" }}
       >
-        Send Message
+        {submitting ? "Sending..." : "Send Message"}
       </button>
+
+      <p className="mt-4 text-xs text-[var(--color-text-muted)]" style={{ fontFamily: "var(--font-nunito)" }}>
+        By submitting this form, you agree to be contacted regarding your inquiry.
+      </p>
     </form>
   );
 }

@@ -101,28 +101,29 @@ export function Footer() {
             </div>
           ))}
 
-          {/* Location + Newsletter */}
+          {/* Contact + Location */}
           <div>
             <h3
               className="text-sm font-bold tracking-widest uppercase text-[var(--color-accent)] mb-4"
               style={{ fontFamily: "var(--font-nunito)" }}
             >
-              Location
+              Contact
             </h3>
-            <p className="text-sm text-[var(--color-text-on-dark)]/70 mb-6" style={{ fontFamily: "var(--font-nunito)" }}>
-              Sunshine Coast, BC
-              <br />
-              Canada
-            </p>
-            <h3
-              className="text-sm font-bold tracking-widest uppercase text-[var(--color-accent)] mb-3"
-              style={{ fontFamily: "var(--font-nunito)" }}
-            >
-              Stay Connected
-            </h3>
-            <p className="text-sm text-[var(--color-text-on-dark)]/70 mb-3" style={{ fontFamily: "var(--font-nunito)" }}>
-              Get fitness tips and class updates.
-            </p>
+            <div className="space-y-2 mb-6" style={{ fontFamily: "var(--font-nunito)" }}>
+              <p className="text-sm">
+                <a href="mailto:suncoastfit@gmail.com" className="text-[var(--color-text-on-dark)]/70 hover:text-[var(--color-accent-light)] transition-colors duration-200">
+                  suncoastfit@gmail.com
+                </a>
+              </p>
+              <p className="text-sm">
+                <a href="tel:+16042205342" className="text-[var(--color-text-on-dark)]/70 hover:text-[var(--color-accent-light)] transition-colors duration-200">
+                  604-220-5342
+                </a>
+              </p>
+              <p className="text-sm text-[var(--color-text-on-dark)]/70">
+                Sunshine Coast, BC, Canada
+              </p>
+            </div>
             <Link
               href="/contact"
               className="inline-block px-5 py-2.5 text-sm font-semibold bg-[var(--color-accent)] text-[var(--color-text-primary)] rounded-[var(--radius-full)] hover:bg-[var(--color-accent-light)] transition-colors duration-300"
@@ -138,9 +139,19 @@ export function Footer() {
           <p className="text-xs text-[var(--color-text-on-dark)]/50" style={{ fontFamily: "var(--font-nunito)" }}>
             &copy; {new Date().getFullYear()} Suncoastfit. All rights reserved.
           </p>
-          <p className="text-xs text-[var(--color-text-on-dark)]/50" style={{ fontFamily: "var(--font-nunito)" }}>
-            ACE Certified Personal Trainer
-          </p>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/privacy"
+              className="text-xs text-[var(--color-text-on-dark)]/50 hover:text-[var(--color-accent-light)] transition-colors duration-200"
+              style={{ fontFamily: "var(--font-nunito)" }}
+            >
+              Privacy Policy
+            </Link>
+            <span className="text-[var(--color-text-on-dark)]/20">|</span>
+            <p className="text-xs text-[var(--color-text-on-dark)]/50" style={{ fontFamily: "var(--font-nunito)" }}>
+              ACE Certified Personal Trainer
+            </p>
+          </div>
         </div>
       </div>
     </footer>

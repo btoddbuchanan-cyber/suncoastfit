@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://suncoastfit.com/sitemap.xml
