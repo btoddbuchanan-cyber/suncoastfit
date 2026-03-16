@@ -55,7 +55,7 @@ export function HeroSection() {
               style={{ fontFamily: "var(--font-nunito)" }}
             >
               Build strength, confidence, and joy through movement — at your
-              pace, in your space. Free workouts, programs, and resources for adults 50+.
+              pace, in your space. Workouts, programs, and resources for adults 50+.
             </motion.p>
 
             <motion.div

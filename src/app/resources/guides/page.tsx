@@ -5,7 +5,7 @@ import { Button } from "@/components/Button";
 export const metadata: Metadata = {
   title: "Guides",
   description:
-    "Free fitness guides from Sandra Buchanan for adults 50+. Strength training, stretching, home workouts, and more — coming soon.",
+    "Fitness guides from Sandra Buchanan for adults 50+. Strength training, stretching, home workouts, and more — coming soon.",
 };
 
 const upcomingGuides = [
@@ -56,7 +56,7 @@ export default function GuidesPage() {
               className="text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] mb-6"
               style={{ fontFamily: "var(--font-dm-serif)" }}
             >
-              Free Fitness{" "}
+              Fitness{" "}
               <span className="text-[var(--color-primary)]">Guides</span>
             </h1>
             <p

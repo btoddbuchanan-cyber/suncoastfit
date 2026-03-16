@@ -101,7 +101,7 @@ One of my students, Janice, told me: "Sandra's classes are challenging but you c
 
 If you've been thinking about trying Pilates, I encourage you to take that first step. You don't need to be flexible, fit, or experienced. You just need to be willing to show up and try.
 
-Check out my YouTube channel for free Pilates-inspired workouts you can do at home. Every workout is designed with beginners in mind, and I walk you through every move.`,
+Check out my YouTube channel for Pilates-inspired workouts you can do at home. Every workout is designed with beginners in mind, and I walk you through every move.`,
   },
   {
     slug: "core-strength-aging-well",
@@ -149,7 +149,7 @@ Start with what feels manageable and add repetitions as you get stronger. Consis
 
 This is exactly why I'm so passionate about Pilates. Every Pilates exercise is, at its heart, a core exercise. The method was specifically designed to build this deep, functional strength — and it does so in a way that's gentle on the joints and accessible at any fitness level.
 
-If you're looking for a structured way to build your core strength, check out my free YouTube workouts — many focus specifically on core and balance.`,
+If you're looking for a structured way to build your core strength, check out my YouTube workouts — many focus specifically on core and balance.`,
   },
   {
     slug: "why-light-weights-matter-after-50",
@@ -201,7 +201,7 @@ A study in the Journal of Bone and Mineral Research found that women who did reg
 
 If you're new to weight training, I always recommend starting with a professional who can assess your movement patterns and guide your form. A few sessions of one-on-one training can set you up with the knowledge and confidence to train safely on your own.
 
-Check out my YouTube channel for free dumbbell and kettlebell workouts designed for adults 50+. No gym membership required — just a set of light weights and a little space.`,
+Check out my YouTube channel for dumbbell and kettlebell workouts designed for adults 50+. No gym membership required — just a set of light weights and a little space.`,
   },
   {
     slug: "getting-up-from-the-floor-safely",

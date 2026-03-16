@@ -81,7 +81,7 @@ export default function VideosPage() {
               className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-[var(--color-accent)] mb-4"
               style={{ fontFamily: "var(--font-nunito)" }}
             >
-              Free Workouts
+              Workouts
             </span>
             <h1
               className="text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] mb-6"
@@ -94,7 +94,7 @@ export default function VideosPage() {
               className="text-lg text-[var(--color-text-secondary)] max-w-2xl mx-auto mb-6"
               style={{ fontFamily: "var(--font-nunito)" }}
             >
-              Join Sandra for free home workouts with highly impactful results!
+              Join Sandra for home workouts with highly impactful results!
               Low impact routines you can do in the comfort of your own home.
             </p>
             <a

@@ -64,7 +64,7 @@ export default function ContactPage() {
                       About
                     </h2>
                     <p className="text-[var(--color-text-secondary)]" style={{ fontFamily: "var(--font-nunito)" }}>
-                      Fitness over 50 with Sandra. Free YouTube workouts, the Walker to Runner program, and more.
+                      Fitness over 50 with Sandra. YouTube workouts, the Walker to Runner program, and more.
                     </p>
                   </div>
 
@@ -97,7 +97,7 @@ export default function ContactPage() {
                       YouTube Workouts
                     </h3>
                     <p className="text-sm text-[var(--color-text-secondary)]" style={{ fontFamily: "var(--font-nunito)" }}>
-                      Join Sandra for free home workouts on YouTube! New videos
+                      Join Sandra for home workouts on YouTube! New videos
                       added regularly.
                     </p>
                   </div>

@@ -9,7 +9,7 @@ import { CTASection } from "@/components/home/CTASection";
 export const metadata: Metadata = {
   title: "Suncoastfit — Fitness Over 50 with Sandra",
   description:
-    "Feel amazing doing what you love. ACE-certified trainer Sandra Buchanan brings fitness to adults 50+. Walker to Runner program and free YouTube workouts.",
+    "Feel amazing doing what you love. ACE-certified trainer Sandra Buchanan brings fitness to adults 50+. Walker to Runner program and YouTube workouts.",
 };
 
 export default function HomePage() {

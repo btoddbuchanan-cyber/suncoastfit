@@ -18,7 +18,7 @@ const services = [
   {
     title: "YouTube Workouts",
     description:
-      "Free low-impact workouts you can do at home. Standing routines, dumbbell sessions, stretching, and more — all designed for adults 50+.",
+      "Low-impact workouts you can do at home. Standing routines, dumbbell sessions, stretching, and more — all designed for adults 50+.",
     href: "/videos",
     image: "/images/services/pilates-plus.png",
     accent: "var(--color-primary)",

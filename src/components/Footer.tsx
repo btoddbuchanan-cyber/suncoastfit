@@ -72,7 +72,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-sm text-[var(--color-text-on-dark)]/70 leading-relaxed mb-6" style={{ fontFamily: "var(--font-nunito)" }}>
-              Fitness over 50 with Sandra. Personalized training, free YouTube workouts, and the Walker to Runner program.
+              Fitness over 50 with Sandra. YouTube workouts, the Walker to Runner program, and more.
             </p>
             <div className="flex gap-3">
               <SocialIcon type="facebook" />

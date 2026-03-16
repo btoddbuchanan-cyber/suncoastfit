@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Suncoastfit",
   },
   description:
-    "Personalized fitness training for adults 50+. ACE-certified personal trainer Sandra Buchanan offers the Walker to Runner program and free YouTube workouts.",
+    "Personalized fitness training for adults 50+. ACE-certified personal trainer Sandra Buchanan offers the Walker to Runner program and YouTube workouts.",
   keywords: [
     "personal trainer over 50",
     "mobile fitness training",
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
     siteName: "Suncoastfit",
     title: "Suncoastfit — Fitness Over 50 with Sandra",
     description:
-      "Personalized fitness training for adults 50+. Walker to Runner program and free YouTube workouts.",
+      "Personalized fitness training for adults 50+. Walker to Runner program and YouTube workouts.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Suncoastfit — Fitness Over 50 with Sandra",
     description:
-      "Personalized fitness training for adults 50+. Walker to Runner program and free YouTube workouts.",
+      "Personalized fitness training for adults 50+. Walker to Runner program and YouTube workouts.",
   },
   robots: {
     index: true,
@@ -95,7 +95,7 @@ const jsonLd = {
       itemOffered: {
         "@type": "Service",
         name: "YouTube Fitness Workouts",
-        description: "Free low-impact workouts for adults 50+ including standing routines, dumbbell sessions, and stretching.",
+        description: "Low-impact workouts for adults 50+ including standing routines, dumbbell sessions, and stretching.",
       },
     },
   ],
