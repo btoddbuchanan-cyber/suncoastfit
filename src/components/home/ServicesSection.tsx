@@ -33,6 +33,15 @@ const services = [
     accent: "var(--color-accent)",
     bgTint: "var(--color-accent-lighter)",
   },
+  {
+    title: "Strength Training Starter Kit",
+    description:
+      "A step-by-step strength training program designed for adults over 50 who want to build strength safely and confidently at home.",
+    href: "/resources/guides",
+    image: "/images/services/personal-training.png",
+    accent: "var(--color-primary)",
+    bgTint: "var(--color-primary-lighter)",
+  },
 ];
 
 export function ServicesSection() {
@@ -65,7 +74,7 @@ export function ServicesSection() {
           </p>
         </AnimatedHeading>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, i) => (
             <motion.div
               key={service.title}
@@ -85,7 +94,7 @@ export function ServicesSection() {
                     alt={service.title}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 768px) 90vw, 30vw"
+                    sizes="(max-width: 768px) 90vw, (max-width: 1024px) 45vw, 25vw"
                   />
                 </div>
 
