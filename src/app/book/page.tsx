@@ -59,9 +59,23 @@ export default function BookPage() {
                   With the right preparation you too can have that exhilarating feeling of
                   throwing on a pair of running shoes and heading out into freedom.
                 </p>
-                <Button href="/contact" variant="primary" size="lg">
-                  Ask About the Book
-                </Button>
+                <div className="flex flex-wrap gap-4">
+                  <Button href="/contact" variant="primary" size="lg">
+                    Ask About the Book
+                  </Button>
+                  <a
+                    href="https://www.amazon.ca/Walker-Minute-Runner-Sandra-Buchanan/dp/1525544845"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-9 py-4 text-lg font-semibold rounded-[var(--radius-full)] bg-[#FF9900] text-white hover:bg-[#E88B00] shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-md)] transition-all duration-300"
+                    style={{ fontFamily: "var(--font-nunito)" }}
+                  >
+                    <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path d="M.045 18.02c.07-.116.36-.315.942-.63 1.677-.91 5.37-2.604 5.37-2.604s.18-.09.27-.09c.09 0 .18.045.18.135v2.295c0 .18-.09.315-.27.405l-5.191 2.564c-.18.09-.36.045-.45-.09-.09-.135-.045-.27.045-.405l.104-.18zm23.91-6.585c0-.135-.09-.27-.225-.315L12.18 6.08c-.135-.045-.315-.045-.45 0L.18 11.12c-.135.045-.225.18-.225.315 0 .135.09.27.225.315l11.55 5.04c.135.045.315.045.45 0l11.55-5.04c.135-.045.225-.18.225-.315zm-11.775 7.47L1.71 14.28c-.18-.09-.405-.045-.495.135-.09.18-.045.405.135.495l10.47 4.625c.135.045.315.045.45 0L22.74 14.91c.18-.09.225-.315.135-.495-.09-.18-.315-.225-.495-.135l-10.2 4.625z" />
+                    </svg>
+                    Buy on Amazon
+                  </a>
+                </div>
               </AnimatedSection>
             </div>
           </div>
