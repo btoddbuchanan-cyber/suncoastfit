@@ -56,7 +56,6 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group" aria-label="Suncoastfit home">
           <div className="relative w-12 h-12">
-            {/* Shoe icon */}
             <svg viewBox="0 0 48 48" fill="none" className="w-12 h-12" aria-hidden="true">
               {/* Sun rays */}
               <line x1="24" y1="4" x2="24" y2="10" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" />
@@ -64,19 +63,23 @@ export function Header() {
               <line x1="36" y1="8" x2="33" y2="13" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" />
               <line x1="6" y1="16" x2="12" y2="18" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" />
               <line x1="42" y1="16" x2="36" y2="18" stroke="var(--color-accent)" strokeWidth="2.5" strokeLinecap="round" />
-              {/* Shoe */}
+              {/* Mountain / coast silhouette */}
               <path
-                d="M10 34 C10 28, 14 22, 22 22 C26 22, 30 24, 32 26 L38 28 C40 28.5, 42 30, 42 32 L42 34 C42 36, 40 38, 38 38 L14 38 C11.8 38, 10 36.2, 10 34Z"
+                d="M4 38 L14 22 L22 30 L30 18 L44 38Z"
                 fill="var(--color-primary-dark)"
                 className="group-hover:fill-[var(--color-primary)] transition-colors duration-300"
               />
-              <path d="M22 22 C22 22, 24 26, 32 26" stroke="var(--color-bg-primary)" strokeWidth="1.5" fill="none" />
             </svg>
           </div>
-          <span className="text-2xl font-[var(--font-dm-serif)] tracking-tight" style={{ fontFamily: "var(--font-dm-serif)" }}>
-            <span className="text-[var(--color-primary-dark)]">suncoast</span>
-            <span className="text-[var(--color-primary)]">fit</span>
-          </span>
+          <div className="flex flex-col">
+            <span className="text-2xl leading-none tracking-tight" style={{ fontFamily: "var(--font-dm-serif)" }}>
+              <span className="text-[var(--color-primary-dark)]">suncoast</span>
+              <span className="text-[var(--color-primary)]">fit</span>
+            </span>
+            <span className="text-[10px] font-semibold tracking-[0.08em] uppercase text-[var(--color-text-muted)]" style={{ fontFamily: "var(--font-nunito)" }}>
+              Fitness over 50 with Sandra
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}
